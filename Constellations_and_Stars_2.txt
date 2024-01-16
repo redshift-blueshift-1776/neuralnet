@@ -1,0 +1,363 @@
+UrsaeMinoris
+Carinae
+Pegasi
+Cephei
+Geminorum
+TrianguliAustralis
+Telescopii
+Sagittae
+Trianguli
+Leonis
+Crucis
+PiscisAustrini
+Draconis
+Andromedae
+Orionis
+Tucanae
+Arietis
+Sagittarii
+CoronaeBorealis
+Indi
+Reticuli
+Arae
+UrsaeMajoris
+Doradus
+Lyrae
+Circini
+Virginis
+CanumVenaticorum
+Librae
+Muscae
+Eridani
+Centauri
+Scorpii
+Columbae
+Lyncis
+Pictoris
+Aquilae
+Lupi
+Serpentis
+Bootis
+Phoenicis
+Aquarii
+Herculis
+CanisMajoris
+Leporis
+Hydrae
+Cygni
+Pavonis
+Hydri
+Puppis
+Ceti
+Gruis
+Velorum
+Cassiopeiae
+Tauri
+Persei
+Aurigae
+Bo�tis
+Cancri
+CanisMinoris
+Ophiuchi
+Capricorni
+Corvi
+6.75 -16.7 CanisMajoris
+6.4 -52.7 Carinae
+14.66667 -60.8 Centauri
+14.26667 19.2 Boötis
+18.61667 38.8 Lyrae
+5.28333 46 Aurigae
+5.25 -8.2 Orionis
+7.65 5.2 CanisMinoris
+1.63333 -57.2 Eridani
+5.91667 7.4 Orionis
+14.06667 -60.4 Centauri
+19.85 8.9 Aquilae
+12.45 -63.1 Crucis
+4.6 16.5 Tauri
+16.48333 -26.4 Scorpii
+13.41667 -11.2 Virginis
+7.75 28 Geminorum
+22.96667 -29.6 PiscisAustrini
+20.68333 45.3 Cygni
+12.8 -59.7 Crucis
+10.13333 12 Leonis
+6.98333 -29 CanisMajoris
+7.58333 31.9 Geminorum
+17.56667 -37.1 Scorpii
+12.51667 -57.1 Crucis
+5.41667 6.3 Orionis
+5.43333 28.6 Tauri
+9.21667 -69.7 Carinae
+5.6 -1.2 Orionis
+22.13333 -47 Gruis
+5.68333 -1.9 Orionis
+12.9 56 UrsaeMajoris
+3.4 49.9 Persei
+11.06667 61.8 UrsaeMajoris
+8.16667 -47.3 Velorum
+7.13333 -26.4 CanisMajoris
+18.4 -34.4 Sagittarii
+13.8 49.3 UrsaeMajoris
+17.61667 -43 Scorpii
+8.38333 -59.5 Carinae
+6 44.9 Aurigae
+16.81667 -69 TrianguliAustralis
+6.63333 16.4 Geminorum
+20.43333 -56.7 Pavonis
+8.75 -54.7 Velorum
+6.38333 -18 CanisMajoris
+9.46667 -8.7 Hydrae
+2.53333 89.3 UrsaeMinoris
+10.33333 19.8 Leonis
+2.11667 23.5 Arietis
+0.73333 -18 Ceti
+18.91667 -26.3 Sagittarii
+14.11667 -36.4 Centauri
+0.13333 29.1 Andromedae
+1.16667 35.6 Andromedae
+5.8 -9.7 Orionis
+14.85 74.2 UrsaeMinoris
+22.71667 -46.9 Gruis
+17.58333 12.6 Ophiuchi
+3.13333 41 Persei
+2.06667 42.3 Andromedae
+11.81667 14.6 Leonis
+0.95 60.7 Cassiopeiae
+12.7 -49 Centauri
+8.06667 -40 Puppis
+9.28333 -59.3 Carinae
+15.58333 26.7 CoronaeBorealis
+9.13333 -43.4 Velorum
+13.4 54.9 UrsaeMajoris
+20.36667 40.3 Cygni
+0.68333 56.5 Cassiopeiae
+17.95 51.5 Draconis
+5.53333 -0.3 Orionis
+0.15 59.2 Cassiopeiae
+13.66667 -53.5 Centauri
+16 -22.6 Scorpii
+16.83333 -34.3 Scorpii
+14.7 -47.4 Lupi
+14.6 -42.2 Centauri
+11.03333 56.4 UrsaeMajoris
+14.75 27.1 Boötis
+21.73333 9.9 Pegasi
+17.7 -39 Scorpii
+0.43333 -42.3 Phoenicis
+11.9 53.7 UrsaeMajoris
+17.16667 -15.7 Ophiuchi
+23.06667 28.1 Pegasi
+7.4 -29.3 CanisMajoris
+21.31667 62.6 Cephei
+9.36667 -55 Velorum
+20.76667 34 Cygni
+23.08333 15.2 Pegasi
+3.03333 4.1 Ceti
+16.61667 -10.6 Ophiuchi
+13.93333 -47.3 Centauri
+11.23333 20.5 Leonis
+16.08333 -19.8 Scorpii
+5.55 -17.8 Leporis
+12.13333 -50.7 Centauri
+12.26667 -17.5 Corvi
+19.05 -29.9 Sagittarii
+15.28333 -9.4 Librae
+15.73333 6.4 Serpentis
+1.91667 20.8 Arietis
+14.85 -16 Librae
+5.66667 -34.1 Columbae
+6 37.2 Aurigae
+12.56667 -23.4 Corvi
+1.43333 60.2 Cassiopeiae
+13.91667 18.4 Boötis
+14.98333 -43.1 Lupi
+4.95 33.2 Aurigae
+10.78333 -49.4 Velorum
+12.61667 -69.1 Muscae
+17.51667 -37.3 Scorpii
+7.28333 -37.1 Puppis
+18.35 -29.8 Sagittarii
+19.76667 10.6 Aquilae
+16.23333 -3.7 Ophiuchi
+16.4 61.5 Draconis
+10.71667 -64.4 Carinae
+12.7 -1.5 Virginis
+5.58333 -5.9 Orionis
+13.35 -36.7 Centauri
+17.71667 4.6 Ophiuchi
+5.13333 -5.1 Eridani
+16.5 21.5 Herculis
+12.25 -58.7 Crucis
+17.5 52.3 Draconis
+12.93333 38.3 CanumVenaticorum
+15.58333 -41.2 Lupi
+5.46667 -20.8 Leporis
+16.68333 31.6 Herculis
+0.43333 -77.3 Hydri
+16.6 -28.2 Scorpii
+18.46667 -25.4 Sagittarii
+0.21667 15.2 Pegasi
+8.13333 -24.3 Puppis
+15.91667 -63.4 TrianguliAustralis
+3.9 31.9 Persei
+17.41667 -55.5 Arae
+17.53333 -49.9 Arae
+3.78333 24.1 Tauri
+13.03333 11 Virginis
+21.78333 -16.1 Capricorni
+1.98333 -61.6 Hydri
+19.75 45.1 Cygni
+6.38333 22.5 Geminorum
+15.31667 -68.7 TrianguliAustralis
+22.31667 -60.3 Tucanae
+2.96667 -40.3 Eridani
+19.16667 -21 Sagittarii
+7.45 8.3 CanisMinoris
+15.98333 -26.1 Scorpii
+3.96667 40 Persei
+16.35 -25.6 Scorpii
+19.51667 28 Cygni
+21.53333 -5.6 Aquarii
+3.08333 53.5 Persei
+9.78333 -65.1 Carinae
+22.71667 30.2 Pegasi
+6.83333 -50.6 Puppis
+12.5 -16.5 Corvi
+22.1 -0.3 Aquarii
+3.96667 -13.5 Eridani
+5.63333 21.1 Tauri
+9.76667 23.8 Leonis
+18.1 -30.4 Sagittarii
+13.31667 -23.2 Hydrae
+17.8 -40.1 Scorpii
+19.08333 13.9 Aquilae
+2.16667 35 Trianguli
+11.16667 44.5 UrsaeMajoris
+15.35 71.8 UrsaeMinoris
+16.86667 -38 Scorpii
+21.9 -37.4 Gruis
+3.71667 47.8 Persei
+6.33333 -30.1 CanisMajoris
+7.05 -23.8 CanisMajoris
+12.16667 -22.6 Corvi
+5.03333 43.8 Aurigae
+12.76667 -68.1 Muscae
+14.53333 38.3 Boötis
+20.35 -14.8 Capricorni
+6.73333 25.1 Geminorum
+10.36667 41.5 UrsaeMajoris
+19.21667 67.7 Draconis
+18.3 -36.8 Sagittarii
+8.91667 5.9 Hydrae
+10.83333 -16.2 Hydrae
+11.6 -63 Centauri
+20.63333 -47.3 Indi
+5.85 -35.8 Columbae
+8.98333 48 UrsaeMajoris
+16.98333 -56 Arae
+17.25 24.8 Herculis
+14.98333 -42.1 Centauri
+9.35 34.4 Lyncis
+9.51667 -57 Velorum
+17.25 36.8 Herculis
+6.63333 -43.2 Puppis
+9.55 51.7 UrsaeMajoris
+17.15 65.7 Draconis
+18.76667 -27 Sagittarii
+5.11667 41.2 Aurigae
+14.71667 -65 Circini
+4.83333 7 Orionis
+5.08333 -22.4 Leporis
+16.96667 9.4 Ophiuchi
+17.83333 -37 Scorpii
+21.21667 30.2 Cygni
+23.65 77.6 Cephei
+15.35 -40.6 Lupi
+16.3 -4.7 Ophiuchi
+18.35 -2.9 Serpentis
+21.48333 70.6 Cephei
+6.8 -61.9 Pictoris
+20.18333 -0.8 Aquilae
+7.48333 -43.3 Puppis
+14.1 -26.7 Hydrae
+15.06667 -25.3 Librae
+18.98333 32.7 Lyrae
+3.78333 -74.2 Hydri
+0.65 30.9 Andromedae
+17.36667 -25 Ophiuchi
+22.91667 -15.8 Aquarii
+5.21667 -16.2 Leporis
+10.23333 -70 Carinae
+15.41667 59 Draconis
+4.56667 -55 Doradus
+10.53333 -61.7 Carinae
+13.83333 -42.5 Centauri
+6.25 22.5 Geminorum
+17.25 14.4 Herculis
+17.41667 -56.4 Arae
+1.1 -46.7 Phoenicis
+3.08333 38.8 Persei
+12.25 57 UrsaeMajoris
+17.2 -43.2 Scorpii
+17.98333 -9.8 Ophiuchi
+19.11667 -27.7 Sagittarii
+4.23333 -62.5 Reticuli
+11.23333 15.4 Leonis
+7.81667 -24.9 Puppis
+1.9 63.7 Cassiopeiae
+5.4 -2.4 Orionis
+6.75 12.9 Geminorum
+8.5 60.7 UrsaeMajoris
+19.41667 3.1 Aquilae
+15.38333 -44.7 Lupi
+13.58333 -0.6 Virginis
+8.78333 6.4 Hydrae
+5.58333 9.9 Orionis
+10.28333 -61.3 Carinae
+12.93333 3.4 Virginis
+22.18333 58.2 Cephei
+4.48333 15.9 Tauri
+1.46667 -43.3 Phoenicis
+4.01667 12.5 Tauri
+13.83333 -41.7 Centauri
+15.2 -52.1 Lupi
+20.75 61.8 Cephei
+22.68333 10.8 Pegasi
+1.88333 29.6 Trianguli
+16 -38.4 Lupi
+17.76667 27.7 Herculis
+20.75 -66.2 Pavonis
+9.18333 -58.9 Carinae
+10.28333 23.4 Leonis
+19.1 -4.9 Aquilae
+10.28333 42.9 UrsaeMajoris
+18.83333 33.4 Lyrae
+0.81667 57.8 Cassiopeiae
+1.15 -10.2 Ceti
+7.95 -53 Carinae
+15.26667 33.3 Bootis
+2.71667 3.2 Ceti
+10.11667 16.8 Leonis
+16.71667 38.9 Herculis
+1.73333 -15.9 Ceti
+7.03333 -27.9 CanisMajoris
+11.3 33.1 UrsaeMajoris
+15.03333 40.4 Bootis
+18.45 -46 Telescopii
+22.81667 -51.3 Gruis
+6.83333 -32.5 CanisMajoris
+7.33333 22 Geminorum
+22.83333 66.2 Cephei
+19.98333 19.5 Sagittae
+22.83333 24.6 Pegasi
+3.71667 -9.8 Eridani
+9.68333 9.9 Leonis
+9.95 -54.6 Velorum
+18.96667 -21.1 Sagittarii
+22.16667 6.2 Pegasi
+4.48333 19.2 Tauri
+8.28333 9.2 Cancri
+11.55 -31.9 Hydrae
+15.83333 -3.4 Serpentis
+17.63333 -15.4 Serpentis

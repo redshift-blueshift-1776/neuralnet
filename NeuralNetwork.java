@@ -1,0 +1,225 @@
+package neuralnet2;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+//as general a description of a neural network as possible so that it can be used in any NN scenario
+public class NeuralNetwork {        
+  
+  //a subclass defining a neuron
+  class Neuron {
+    private int numInputs;        //each neuron takes in inputs
+    private double brightness;
+    ArrayList<Double> weights;       //whose significance is modified by a weight
+    
+    public Neuron(int inputs) {
+      numInputs = inputs;// + 1;       //one extra for the threshold value
+      weights = new ArrayList<Double>(numInputs);
+      Random rnd = new Random();
+      for (int i = 0; i < numInputs; i++) {   //randomized weight initialization from -1 to 1
+        weights.add(rnd.nextDouble()*2.0 - 1);
+      }
+    }
+    
+    public double getBrightness()
+    {
+      return brightness;
+    }
+    
+    public void setBrightness(double b)
+    {
+      brightness = b;
+    }
+  }
+  
+  //a subclass defining a layer of neurons in a network
+  class NeuronLayer {
+    private int numNeurons;        //a layer consists of at least one neuron
+    ArrayList<Neuron> neurons;       //the neurons of the layer
+    
+    public NeuronLayer(int neuronCount, int inputsPerNeuron) {
+      numNeurons = neuronCount;
+      neurons = new ArrayList<Neuron>(numNeurons);
+      for (int i = 0; i < neuronCount; i++) {   //randomized neuron initialization
+        neurons.add(new Neuron(inputsPerNeuron));
+      }
+    }
+  }
+  
+  private int numInputs;         //a neural net takes in a set of inputs
+  private int numOutputs;         //and delivers a set of outputs
+  private int numHiddenLayers;       //between these inputs and outputs are 'hidden' layers of neurons
+  private int numNeuronsPerHiddenLayer;     //which may have many neurons to create the many synaptic connections
+  public ArrayList<NeuronLayer> layers;
+  
+  //initialization/creation of a network given the parameters defining the size of the network
+  public NeuralNetwork(int numIn, int numOut, int numHidden, int numNeuronPerHidden) {
+    numInputs = numIn;
+    numOutputs = numOut;
+    numHiddenLayers = numHidden;
+    numNeuronsPerHiddenLayer = numNeuronPerHidden;
+    layers = new ArrayList<NeuronLayer>();
+    createNet();
+  }
+  
+  public void createNet() {
+    //create layers of the network
+    if (numHiddenLayers > 0) {
+      //add a new layer to Layers connecting the inputs to the first hidden network if one exists
+      //your code goes here
+      layers.add(new NeuronLayer(Params.NEURONS_PER_HIDDEN, Params.INPUTS));
+      
+      for (int i = 0; i < numHiddenLayers - 1; i++) {      //for the hidden middle layers, one hidden layer to the next
+        //more code here
+        layers.add(new NeuronLayer(Params.NEURONS_PER_HIDDEN, Params.NEURONS_PER_HIDDEN));
+      }
+      layers.add(new NeuronLayer(numOutputs, Params.NEURONS_PER_HIDDEN));
+      //one last layer to connect the last hidden layer to the outputs
+    } else {
+      layers.add(new NeuronLayer(numOutputs, numInputs));     //if there's no hidden layers, just one layer with inputs and outputs
+    }
+  }
+  
+  //idea for these methods: read through the neural net layer by layer and append all of them into one long weights ArrayList
+  public ArrayList<Double> getWeights() { //gets the weights from the network and turns it into a simple list
+    ArrayList<Double> weights = new ArrayList<Double>();
+    //for each weight in each neuron in each layer
+    for (NeuronLayer l : layers) {
+      for (int j = 0; j < l.numNeurons; j++) {
+        for (int k = 0; k < l.neurons.get(j).numInputs; k++) {
+          //one line goes here
+          weights.add(l.neurons.get(j).weights.get(k));
+        }
+      }
+    }
+    return weights;
+  }
+  
+  public int getNumberOfWeights() { //returns total number of weights in the whole network, if you need it
+    return getWeights().size();
+  }
+  
+  public void replaceWeights(ArrayList<Double> newWeights) { //...replaces weights given an input ArrayList
+    int cWeight = 0; //index to walk through newWeights
+    if (newWeights.size() == 0)
+    {
+      return;
+    }
+    //your code goes here
+    for (NeuronLayer l : layers)
+    {
+      for (int j = 0; j < l.numNeurons; j++)
+      {
+        for (int k = 0; k < l.neurons.get(j).numInputs; k++)
+        {
+          //System.out.println(l.neurons.size() + " " + l.neurons.get(j).weights.size() + " " + newWeights.size());
+          //System.out.println(j + " " + k + " " + cWeight);
+          l.neurons.get(j).weights.set(k, newWeights.get(cWeight));
+          cWeight++;
+        }
+      }
+    }
+  }
+  
+  @SuppressWarnings("unchecked")
+  public ArrayList<Double> Update(ArrayList<Double> inputs) { //takes the inputs and computes the outputs having run through the neural net layer
+    ArrayList<Double> outputs = new ArrayList<Double>(numOutputs);
+    int weight = 0;
+    double netInput = 0;
+    if (inputs.size() != numInputs) {
+      System.out.println("uh oh");
+      return outputs;  //empty outputs if incorrect number of inputs
+    }
+    for (int i = 0; i < numHiddenLayers + 1; i++) { //for each layer
+      if (i > 0) {
+        inputs = (ArrayList<Double>) outputs.clone(); //make the new inputs be the outputs from the previous iteration of the loop
+      }
+      outputs.clear();
+      weight = 0; //an indexing variable
+      //for each neuron in that layer
+      for(int q = 0; q < layers.get(i).numNeurons; q++)
+        //for(int q = 0; q < 1; q++)
+      {
+//        weight = 0;
+        netInput = 0;
+        double temp = 0;
+        //for each input-weight combo in that neuron
+        for(int j = 0; j < layers.get(i).neurons.get(q).numInputs/* - 1*/; j++)
+        {
+          //System.out.println(i + " " + j + " " + q + " " + weight);
+          //System.out.println("inputs.size " + inputs.size() + " " + layers.get(i).neurons.get(q).numInputs);
+          //temp += inputs.get(q) * layers.get(i).neurons.get(j).weights.get(weight);
+ //         netInput += inputs.get(weight) * layers.get(i).neurons.get(q).weights.get(weight);
+          netInput += inputs.get(j) * layers.get(i).neurons.get(q).weights.get(j);
+//          weight++;
+          //outputs.add(temp);
+          
+          
+          //do the summation of input*weight (called the activation value)
+        }
+        //netInput += layers.get(i).neurons.get(q).weights.get(layers.get(i).neurons.get(q).numInputs - 1);//*Params.BIAS;
+        outputs.add(sigmoid(netInput, Params.ACT_RESPONSE));
+        layers.get(i).neurons.get(q).setBrightness(sigmoid(netInput, Params.ACT_RESPONSE));
+      }
+      //the output of the neuron is then dependent upon the activation exceeding a threshold value stored as the bias
+      //the bias is stored as the last, extra 'weight' at the end of the weights ArrayList
+      /*
+       for(int j = 0; j < numInputs; j++)
+       {
+       //netInput += layers.get(i).neurons.get(j).weights.get(neuronInputs - 1)*Params.BIAS;  //uncomment this line, it's a hint
+       netInput += layers.get(i).neurons.get(j).weights.get(numInputs - 1)*Params.BIAS;
+       }
+       
+       double tt = 0;
+       tt = sigmoid(netInput, Params.ACT_RESPONSE);
+       //System.out.println(tt);
+       outputs.add(sigmoid(netInput, Params.ACT_RESPONSE)); //scale the activation using a sigmoid function 
+       */
+      weight = 0; //reset the indexing to zero
+    }
+    return outputs;
+  }
+  
+  public double sigmoid(double activation, double response) { //the sigmoid function returns a value between 0 and 1, <0.5 for negative inputs, >0.5 for positive inputs
+    //return Math.max((1.0 / (1.0 + Math.exp(-activation / response))), 0.00000000000000001);
+    return (1.0 / (1.0 + Math.exp(-activation / response)));
+  }
+  
+  /*
+   * 
+   * 
+   function BACK-PROP-LEARNING(examples,network) returns a neural network inputs: examples, a set of examples, each with input vector x and output vector y
+   network , a multilayer network with L layers, weights wi,j , activation function g
+   
+   local variables: Δ, a vector of errors, indexed by network node
+   
+   repeat
+   
+   for each weight wi,j in network
+   {
+   weights[i][j] = Math.Random();//  a small random number
+   }
+   for each example (x, y) in examples
+   {
+   //Propagate the inputs forward to compute the outputs
+   for each node i in the input layer
+   {
+   ai = xi
+   }
+   for(int l = 2; l < L; l++) //to L
+   {
+   for each node j in layer l
+   {
+   inj wi,jai
+   i aj g(inj)
+   }
+   }
+   // Propagate deltas backward from output layer to input layer
+   */
+  
+  /*
+   until some stopping criterion is satisfied
+   
+   return network
+   */
+}
